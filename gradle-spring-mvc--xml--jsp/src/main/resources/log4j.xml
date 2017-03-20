@@ -37,5 +37,22 @@
 		<priority value="warn" />
 		<appender-ref ref="console" />
 	</root>
+
+	<appender name="FILE" class="org.apache.log4j.FileAppender">
+
+		<param name="file" value="${log}/log.out"/>
+		<param name="immediateFlush" value="true"/>
+		<param name="threshold" value="debug"/>
+		<param name="append" value="false"/>
+
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="conversionPattern" value="%m%n"/>
+		</layout>
+	</appender>
+
+	<logger name="log4j.rootLogger" additivity="false">
+		<level value="DEBUG"/>
+		<appender-ref ref="FILE"/>
+	</logger>
 	
 </log4j:configuration>

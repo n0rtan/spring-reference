@@ -16,18 +16,16 @@ war {
     version = '1.0'
 }
 
-configurations.all {
-    exclude group: "commons-logging", module: "commons-logging"
-    exclude group: "javax.mail", module: "mail"
-    exclude group: "javax.jms", module: "jms"
-    exclude group: "com.sun.jdmk", module: "jmxtools"
-    exclude group: "com.sun.jmx", module: "jmxri"
-}
-
 dependencies {
 
     compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.7.RELEASE'
-    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.24'
+    compile (group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.24') {
+        exclude group: "commons-logging", module: "commons-logging"
+        exclude group: "javax.mail", module: "mail"
+        exclude group: "javax.jms", module: "jms"
+        exclude group: "com.sun.jdmk", module: "jmxtools"
+        exclude group: "com.sun.jmx", module: "jmxri"
+    }
     compile group: 'org.slf4j', name: 'jcl-over-slf4j', version: '1.7.24'
     compile group: 'jstl', name: 'jstl', version: '1.2'
 
