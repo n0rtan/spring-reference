@@ -36,11 +36,14 @@
 Links:
 	1) Spring STS Legacy project
 	2) http://www.baeldung.com/project-configuration-with-spring
-    3) http://www.baeldung.com/properties-with-spring
-    4) https://www.mkyong.com/spring/spring-propertysources-example/
-    5) https://dzone.com/articles/properties-spring
-    6) http://www.java2novice.com/spring/read-property-file-xml-config/
-    7) https://examples.javacodegeeks.com/enterprise-java/spring/load-environment-configurations-and-properties-with-spring-example/
+	3) http://www.baeldung.com/properties-with-spring
+	4) https://www.mkyong.com/spring/spring-propertysources-example/
+	5) https://dzone.com/articles/properties-spring
+	6) http://www.java2novice.com/spring/read-property-file-xml-config/
+	7) https://examples.javacodegeeks.com/enterprise-java/spring/load-environment-configurations-and-properties-with-spring-example/
+	8) http://www.javarticles.com/2016/01/spring-propertysources-annotation-example.html
+	9) http://www.java2novice.com/spring/
+	10) https://www.mkyong.com/spring-mvc/spring-mvc-internationalization-example/
 -->
 
 </web-app>

@@ -5,7 +5,7 @@
 <spring:url value="/resources/js/main.js" var="mainjs" />
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Gradle-Spring-MVC / XML / JSP - Reference Application</title>
@@ -17,6 +17,10 @@
 <body>
 
     <h2>${message}</h2>
+
+    Language : <a href="?language=en">English</a> | <a href="?language=ru">Russian</a>
+    <div><spring:message code="message" /> </div>
+    Current Locale : ${pageContext.response.locale} / ${locale}
 
 </body>
 </html>
